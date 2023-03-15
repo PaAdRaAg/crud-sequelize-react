@@ -1,10 +1,7 @@
 const router = require('express').Router();
 
-const middleware = require('./middleware');
-const apiTasksRouter = require('./api/tasks');
-const apiLogUsersRouter = require('./api/logUsers');
+const apiUsersRouter = require('./api/users');
 
-router.use('/tasks', middleware.checkToken, apiTasksRouter);
-router.use('/logUsers', apiLogUsersRouter);
+router.use('/users', apiUsersRouter);
 
 module.exports = router;

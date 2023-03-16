@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-
 const UserModel = require('./models/users');
 
 const sequelize = new Sequelize('mydatabase', 'root', '', {
